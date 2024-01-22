@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "ffa0af6c-1d5d-4678-9e69-126b7d59b7ae",
+		"name": "RabbitMQ-Logger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7973098",
+		"_collection_link": "https://restless-crescent-348583.postman.co/workspace/Awais-Alliance-Drive-Way-Work-S~318e1f44-d844-48ed-ae2a-fabcf3198efb/collection/7973098-ffa0af6c-1d5d-4678-9e69-126b7d59b7ae?action=share&source=collection_link&creator=7973098"
+	},
+	"item": [
+		{
+			"name": "Send Info Log",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"logType\": \"Info\",\n    \"message\": \"Info Msg send from POST api sendLog\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:3000/sendLog",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"sendLog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Warning Log",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"logType\": \"Warning\",\n    \"message\": \"Warning Msg send from POST api sendLog\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:3000/sendLog",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"sendLog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Error Log",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"logType\": \"Error\",\n    \"message\": \"Error Msg send from POST api sendLog\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:3000/sendLog",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"sendLog"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
