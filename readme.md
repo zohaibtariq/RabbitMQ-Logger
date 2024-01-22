@@ -55,7 +55,7 @@ docker logs -f logwarninganderrorms
 
 #### this log should appear in only loginfoms container
 ```
-POST 0.0.0.0:3000/sendLog
+POST http://0.0.0.0:3000/sendLog
 {
     "logType": "Info",
     "message": "Info Msg send from POST api sendLog"
@@ -63,7 +63,7 @@ POST 0.0.0.0:3000/sendLog
 ```
 #### this log should appear in only logwarninganderrorms container
 ```
-POST 0.0.0.0:3000/sendLog
+POST http://0.0.0.0:3000/sendLog
 {
     "logType": "Warning",
     "message": "Warning Msg send from POST api sendLog"
@@ -72,9 +72,17 @@ POST 0.0.0.0:3000/sendLog
 
 #### this log should appear in only logwarninganderrorms container
 ```
-POST 0.0.0.0:3000/sendLog
+POST http://0.0.0.0:3000/sendLog
 {
     "logType": "Error",
     "message": "Error Msg send from POST api sendLog"
 }
+```
+
+#### rabbitmq management dashboard
+```
+GET http://0.0.0.0:15672
+
+username: guest
+password: guest
 ```
