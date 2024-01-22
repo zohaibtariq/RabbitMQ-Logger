@@ -48,9 +48,9 @@ docker logs -f loginfoms
 docker logs -f logwarninganderrorms
 ```
 
-#### postman collection link
+#### postman collection file link
 ```
-
+[POSTMAN COLLECTION FILE](https://github.com/zohaibtariq/RabbitMQ-Logger/blob/main/RabbitMQ-Logger.postman_collection.json)
 ```
 
 #### this log should appear in only loginfoms container
